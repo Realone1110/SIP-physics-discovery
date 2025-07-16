@@ -33,7 +33,7 @@ Each case study is organized in its own dedicated folder with complete implement
   ```bash
   pip install numpy scipy matplotlib pandas jupyter
   ```
-
+- See the environment.yml file for complete required packages:
 ### Usage
 1. Clone the repository:
    ```bash
