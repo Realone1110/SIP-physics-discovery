@@ -1,0 +1,48 @@
+name: Python package
+defaults:
+  run:
+    shell: bash -leo pipefail {0}
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  run-tests:
+    runs-on: ${{ matrix.os }}
+    name: sunode - ${{ matrix.os }} - ${{ matrix.python-version }}
+    strategy:
+      max-parallel: 6
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest", "windows-latest"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install micromamba
+      uses: mamba-org/setup-micromamba@v1
+      with:
+        environment-name: sunode-dev
+        create-args: >-
+          python=${{ matrix.python-version }}
+          pytest
+          pytest-cov
+          hypothesis
+          statsmodels
+          pytensor
+          c-compiler
+          sundials<6.0
+          numba
+          sympy
+          typing_extensions
+          cffi
+          xarray
+        init-shell: bash
+    - name: Install sunode
+      run: |
+        pip install -e .
+    - name: Test with coverage
+      run: |
+        pytest --cov=sunode --cov-report xml --cov-report term-missing sunode
