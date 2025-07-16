@@ -54,7 +54,6 @@ Each case study is organized in its own dedicated folder with complete implement
 Contains comprehensive analysis of various infiltration physics models, including:
 - High viscous SIP implementations
 - Infiltration physics simulations
-- 
 
 ### Hudson Bay
 Complete analysis and modeling specific to Hudson Bay dynamics.
