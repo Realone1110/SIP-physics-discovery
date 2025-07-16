@@ -104,6 +104,6 @@ If you use this code in your research, please cite the associated Physics Discov
 
 ## 📧 Contact
 
-For questions about the implementation or methodology, please open an issue in this repository.
+For questions about the implementation or methodology, please contact olabiyiridwan12@gmail.com.
 
 **Note**: This repository contains research code that may require domain-specific knowledge in physics and dynamical systems theory for full utilization.
