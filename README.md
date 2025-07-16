@@ -1,5 +1,8 @@
 # SIP Physics Discovery
 
+## License
+Released under the MIT License (see `LICENSE` for full text).
+
 ## Code for Consistent Discovery of Dynamical Systems Using Stochastic Inverse Modeling
 
 This repository contains the raw Python code and Jupyter notebooks for the Physics Discovery Paper Project, focusing on the consistent discovery of dynamical systems through stochastic inverse modeling techniques.
