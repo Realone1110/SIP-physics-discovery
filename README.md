@@ -78,18 +78,18 @@ Helper functions are provided in two locations:
 ## 📈 Methodology
 
 This project implements **Stochastic Inverse Modeling for Physics Discovery (SIP)** for physics discovery, focusing on:
+- Dynamical system identification
 - Consistent parameter estimation
 - Uncertainty quantification
 - Robust model selection
-- Dynamical system identification
+
 
 ## 🔬 Research Context
 
 This code supports research in:
-- Inverse problem solving in physics
 - Stochastic modeling techniques
 - Dynamical systems recovery
-- 
+
 
 ## 📝 File Formats
 
